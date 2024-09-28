@@ -108,17 +108,19 @@ TBD
 All images used in this project are either original creations or sourced from reputable platforms. If an image is not my own, proper credit is provided to the creator or source. Unauthorized use of any images is prohibited without permission.
 
 </details>
-<br>
 
 _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 ## Technology stack
 
-### Languages
+<details><b><summary>Languages</b></summary>
+<br>
 
 - [HTML](https://en.wikipedia.org/wiki/HTML)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+</details>
 
 <details><b><summary>Tools and Libraries</b></summary>
 <br>
@@ -140,9 +142,9 @@ _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 - [Wave](https://wave.webaim.org/)
 - [Web Disability Sim](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
 
-_<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
-
 </details>
+
+_<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 ## Testing
 
