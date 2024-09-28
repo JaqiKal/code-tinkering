@@ -2,6 +2,8 @@
 
 This is my personal playground for experimenting with various coding techniques, concepts, and ideas. This repository serves as a space to test new technologies, build small projects, and explore creative solutions without the pressure of perfection. From web animations and algorithms to exploring libraries and frameworks, this is where I refine my skills and try out new things in a hands-on way.
 
+[Deployed site](https://jaqikal.github.io/code-tinkering/)  
+
 ## Table of Contents
 
 - [Code Tinkering](#code-tinkering)
