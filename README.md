@@ -69,6 +69,17 @@ _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 The skeleton represents the foundational framework of the project. This chapter focuses on building the basic structure or "bare bones" of your application—like setting up HTML for a webpage, defining the core logic of a script, or establishing the first working model of an idea.
 
+<details>
+<summary>Wireframe</summary>
+
+### Landing page
+
+![x](/documentation/wireframe/wireframe-landing.webp)
+
+</details>
+
+<br>
+
 _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 ## Surface
