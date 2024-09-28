@@ -31,7 +31,9 @@ _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 The structure chapter explores how to organize the code and projects effectively. Proper structure is key to maintaining readable, scalable, and maintainable code. We will touch on folder setups, component separation, and how to architect projects for simplicity and growth.
 
-This outlines the projects file organization:
+<details>
+<summary>This outlines the projects file organization: </summary>
+<br>
 
 ```
 project/
@@ -63,6 +65,8 @@ project/
     ├── [images-for-hero-and-projects]
 ```
 
+</details>
+
 _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
 ## Skeleton
@@ -77,8 +81,6 @@ The skeleton represents the foundational framework of the project. This chapter 
 ![x](/documentation/wireframe/wireframe-landing.webp)
 
 </details>
-
-<br>
 
 _<span style="color: blue;">[Back to Content](#table-of-contents)</span>_
 
