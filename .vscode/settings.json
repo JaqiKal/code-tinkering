@@ -43,6 +43,7 @@ This file defines your personal VS Code editor settings, such as file exclusions
       "toolsai",
       "venv",
       "virtualenv"
-    ]
+    ],
+    "livePreview.defaultPreviewPath": "/index.html"
   }
   

@@ -1,3 +1,28 @@
+/*UTILITY CLASSES*/
+
+/* Hide content visually, but still make it accessible for screen readers*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Utility that completely hides an element from the DOM visually and for assistive technology */
+.hidden {
+  display: none;
+}
+
+/* Utility that can be applied when menu is active */
+.active {
+  display: block;
+
+}
+
 /* BASE STYLE mobile first */
 
 /* Import Google Fonts */
@@ -10,16 +35,6 @@
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
 
 /* Set up the body with a gradient circular background */
 body,
@@ -102,7 +117,7 @@ body {
 }
 
 .nav-links li {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .nav-links a {
@@ -159,21 +174,48 @@ body {
 }
 
 
-
 /* Burger menu styling for mobile */
 .burger-menu {
   display: flex;
   /* Displayed for small screens */
   flex-direction: column;
+  justify-content: space-around;
   cursor: pointer;
   z-index: 11;
+  width: 40px;
+  /* Set a fixed width for consistency */
+  height: 30px;
+  /* Set a fixed height for consistency */
+  border: none;
+  /* Remove default button borders */
+  background: none;
+  /* Remove default button backgrounds */
 }
 
+.burger-menu.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Bar styles inside burger menu */
 .bar {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  /* Width of each bar */
+  height: 4px;
+  /* Height of each bar */
   background-color: white;
-  margin: 4px 0;
+  /* Color of bars */
+  margin: 2px 0;
+  /* Space between bars */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* Transition for animation effect */
 }
 
 /* Header section styling */
