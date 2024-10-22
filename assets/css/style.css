@@ -145,7 +145,7 @@ body {
 
 /* Header section styling */
 #hero {
-  background: url("/assets/images/hero.webp") center/cover no-repeat;
+  background: url("../images/hero.webp") center/cover no-repeat;
   min-height: 100vh;
   display: flex;
   justify-content: center;
