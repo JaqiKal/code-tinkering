@@ -3,7 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Title -->
+    <title>Code Tinkering Landing Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
   </head>
-  <body></body>
+  <!-- Landing page -->
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img class="logo-img" src="assets/images/logo.png" alt="Website logo" /></a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="projects/projects-overview.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Burger menu for mobile view -->
+        <div class="burger-menu" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page header section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1 class="visually-hidden">Let's code</h1>
+        <p>Fun-filled frolicking!</p>
+        <p id="quote">“The future is something which everyone reaches at the rate of sixty minutes an hour, whatever he does, whoever he is.” — C.S. Lewis</p>
+        <span id="clock"></span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-socials">
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/jaqikal" target="_blank" rel="noopener noreferrer" aria-label="Github link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/jaqikal" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <hr class="footer-divider" />
+      </div>
+
+      <div>
+        <p class="footer-text">
+          Code Tinkering &copy; 2024 developed by
+          <a class="footer-link" href="https://github.com/JaqiKal/" target="_blank" rel="noopener noreferrer">
+            <strong>Jaqi Kal</strong>
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/9df7bb9731.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/mobileMenuToggle.js"></script>
+    <script src="assets/js/clock.js"></script>
+  </body>
 </html>
