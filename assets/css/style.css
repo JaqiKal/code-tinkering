@@ -114,18 +114,51 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff0000;
-  background-color: #F0B08A;
+  color: #2b190d;
+  /* Keeps the text color red */
+  background: linear-gradient(135deg, #ffa1ac, #ffccd2);
+  /* Gradient using #ffa1ac as base, with a lighter pink */
   border-radius: 50%;
+  /* Creates a circular button effect */
   padding: 10px;
-  /* Make the padding consistent */
-  transform: scale(1.1);
-  /* Scales up the button by 10% */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* Smooth transition for the scale and shadow */
+  /* Padding for consistent button sizing */
+  transform: scale(1.1) rotate(2deg);
+  /* Scales up and adds a slight rotation */
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* Adds both inner and outer shadows */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  /* Smooth transition for all effects */
+  position: relative;
+  /* Required for the pseudo-element positioning */
 }
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: rgba(255, 255, 255, 0.2);
+  /* Adds a glossy effect to the button */
+  border-radius: 50%;
+  /* Matches the button shape */
+  pointer-events: none;
+  /* Ensures the pseudo-element doesn't interfere with button clicks */
+  transform: scale(0.9);
+  /* Makes the gloss effect fit inside */
+  opacity: 0;
+  /* Invisible by default */
+  transition: opacity 0.3s ease;
+  /* Smooth fade-in for the gloss effect */
+}
+
+.nav-links a:hover::after {
+  opacity: 1;
+  /* Shows the gloss effect on hover */
+}
+
+
 
 /* Burger menu styling for mobile */
 .burger-menu {
