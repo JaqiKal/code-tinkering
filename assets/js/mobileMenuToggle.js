@@ -8,7 +8,11 @@
 // jshint esversion: 6
 
 
-function toggleMenu() {
-const navLinks = document.querySelector(".nav-links");
-navLinks.classList.toggle("active"); // Toggle the 'active' class
-}
+document.addEventListener("DOMContentLoaded", function() {
+  const burgerMenu = document.querySelector(".burger-menu");
+  const navLinks = document.querySelector(".nav-links");
+
+  burgerMenu.addEventListener("click", function() {
+    navLinks.classList.toggle("active"); // Toggle the 'active' class to show/hide menu
+  });
+});

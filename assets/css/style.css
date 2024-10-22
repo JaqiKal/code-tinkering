@@ -1,0 +1,303 @@
+/* BASE STYLE mobile first */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Set up the body with a gradient circular background */
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  background: radial-gradient(circle, #ffe577 40%, #fda63a 100%);
+  display: flex;
+  flex-direction: column;
+  color: #2e2e2e;
+}
+
+body {
+  justify-content: space-between;
+}
+
+/* Navbar styling */
+.navbar {
+  background: radial-gradient(circle, #fda63a 30%, #ff5a00 100%);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  top: 0;
+  /* Sticks to the top of the viewport */
+  z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+  flex: 1;
+}
+
+.logo-img {
+  width: 60px;
+  filter: drop-shadow(0 0.2rem 0.25rem rgb(255, 60, 0));
+  transition: transform 0.5s ease-in-out;
+}
+
+.logo-img:hover {
+  animation: wobble 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+/* Nav links styling for mobile */
+.nav-links {
+  display: none;
+  /* Hidden by default on mobile */
+  list-style: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  /* Position below navbar */
+  left: 0;
+  width: 100%;
+  background-color: #fda63a;
+  text-align: center;
+  z-index: 10;
+}
+
+.nav-links.active {
+  display: flex;
+  /* Show the menu when burger menu is clicked */
+}
+
+.nav-links li {
+  margin: 10px 0;
+}
+
+.nav-links a {
+  color: #2b190d;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #ff0000;
+  background-color: #F0B08A;
+  border-radius: 50%;
+  padding: 10px;
+  /* Make the padding consistent */
+  transform: scale(1.1);
+  /* Scales up the button by 10% */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for the scale and shadow */
+}
+
+/* Burger menu styling for mobile */
+.burger-menu {
+  display: flex;
+  /* Displayed for small screens */
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+/* Header section styling */
+#hero {
+  background: url("/assets/images/hero.webp") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-content {
+  transform: translateY(-150px);
+}
+
+
+#hero p {
+  font-size: 1.3rem;
+  color: #2b190d;
+  padding: 40px 20px;
+
+}
+
+
+#clock {
+  font-size: 1.0rem;
+  color: #2b190d;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7),
+    0px 0px 10px rgba(255, 255, 255, 0.8),
+    0px 0px 20px rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+.footer {
+  background: radial-gradient(circle, #fda63a 30%, rgb(255, 90, 0) 100%);
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* Social list styling */
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-list a {
+  text-decoration: none;
+  color: #8d0386;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  /* Smooth transition for hover effects */
+
+}
+
+.social-list a:hover {
+  color: #ffccff;
+
+}
+
+/* Targeting the Font Awesome icon specifically */
+.fa-brands {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Adds a smooth transition */
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  /* Increases the size by 20% when hovered */
+  filter: drop-shadow(0 0.2rem 0.25rem rgb(255, 60, 0));
+}
+
+/* hr styling */
+.footer-divider {
+  width: 100%;
+  margin: 5px auto;
+  border: none;
+  padding: none;
+  background-color: #f89604;
+  height: 1px;
+  transform: scaleY(0.5);
+}
+
+/* Footer link styling */
+.footer p {
+  margin: 0;
+  font-size: xx-small;
+}
+
+.footer-link {
+  color: #2b190d;
+  font-size: small;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ffccff;
+}
+
+.footer-text {
+  font-size: small;
+  color: #2b190d;
+}
+
+/* ----------------------------- */
+/* Media Queries for Larger View */
+/* ----------------------------- */
+
+/* For Tablets and Up */
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none;
+    /* Hide burger menu on larger screens */
+  }
+
+  .nav-links {
+    display: flex;
+    /* Show links by default on larger screens */
+    flex-direction: row;
+    position: static;
+    /* No longer absolute */
+    width: auto;
+    gap: 20px;
+    background-color: transparent;
+  }
+
+  .nav-links a {
+    color: #2b190d;
+    padding: 0;
+  }
+
+  .logo-img {
+    width: 80px;
+    /* Slightly larger logo for larger screens */
+  }
+
+  #hero p {
+    font-size: 2.3rem;
+  }
+
+  .hero-content {
+    transform: translateY(-180px);
+  }
+
+  #clock {
+    font-size: 1.5rem;
+  }
+
+  .social-list {
+    width: 200px;
+  }
+}
