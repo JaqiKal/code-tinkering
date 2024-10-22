@@ -24,8 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelector(".nav-links");
 
   burgerMenu.addEventListener("click", function () {
-    navLinks.classList.toggle("hidden"); // Toggles the 'hidden' class to show/hide the menu
-    navLinks.classList.toggle("active"); // Optionally, add an 'active' class if needed for additional styling
+    navLinks.classList.toggle("hidden"); // Toggles the 'hidden' class for Tailwind CSS to show/hide the menu
+    navLinks.classList.toggle("active"); // Toggles the 'active' class for Vanilla CSS to show/hide the menu
+
     // Toggle burger menu animation
     burgerMenu.classList.toggle("open");
 
