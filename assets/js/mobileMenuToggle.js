@@ -1,8 +1,19 @@
-/* Mobile Menu Toggle - implement a hamburger menu for a website's navigation,
-* better known as "Hamburger menu" or "Mobile menu".
-
- * Other:
- * - jshint esversion: 6
+/* 
+ * Mobile Menu Toggle Script
+ * -------------------------
+ * This script implements a hamburger menu toggle for a website's navigation.
+ * The "hamburger" button allows users to show or hide the navigation links
+ * on smaller screens (mobile or tablet). This is commonly referred to as a 
+ * "Hamburger Menu" or "Mobile Menu".
+ *
+ * The script also manages accessibility by updating the `aria-expanded` 
+ * attribute to indicate whether the menu is currently expanded or collapsed.
+ * 
+ * Additional Notes:
+ * - jshint esversion: 6 (This ensures the script follows ES6 standards.)
+ * - Clicking on the hamburger icon will toggle the `hidden` and `active` classes 
+ *   to control the visibility of the navigation links and toggle any related styles.
+ * - The `open` class is used to animate the hamburger icon when toggled.
  */
 
 // jshint esversion: 6
