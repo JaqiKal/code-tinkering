@@ -26,15 +26,24 @@ document.addEventListener("DOMContentLoaded", function () {
   burgerMenu.addEventListener("click", function () {
     navLinks.classList.toggle("hidden"); // Toggles the 'hidden' class for Tailwind CSS to show/hide the menu
     navLinks.classList.toggle("active"); // Toggles the 'active' class for Vanilla CSS to show/hide the menu
-
-    // Toggle burger menu animation
-    burgerMenu.classList.toggle("open");
+    burgerMenu.classList.toggle("open"); // Animate burger icon
 
     // Update aria-expanded attribute for accessibility
     const expanded = burgerMenu.getAttribute("aria-expanded") === "true" || false;
     burgerMenu.setAttribute("aria-expanded", !expanded);
   });
+  
+  // Add an event listener for window resizing to handle nav visibility
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 768) {
+      // Ensure nav links are visible on larger screens
+      navLinks.classList.remove("hidden");
+      navLinks.classList.remove("active");
+    } else {
+      // Ensure nav links are hidden on smaller screens unless burger is open
+      if (!burgerMenu.classList.contains("open")) {
+        navLinks.classList.add("hidden");
+      }
+    }
+  } );
 });
-
-
-
