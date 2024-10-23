@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Colour Palette</title>
+    <!-- Tailwind CSS via cdn-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../color-palette-project/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../../color-palette-project/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../../projects/color-palette-project/images/favicon/favicon-16x16.png" />
+
+    <!-- Inline style & Media queries-->
+    <style>
+      @media only screen and (min-width: 768px) {
+        footer {
+          position: sticky;
+          bottom: 0;
+        }
+      }
+
+      /* När bredden är mindre än 330px, stapla cirklarna vertikalt */
+      @media (max-width: 330px) {
+        .circle-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      /* Se till att footern är längst ner även om innehållet är kort */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1; /* Gör att main-innehållet fyller ut utrymmet innan footern */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    </style>
+  </head>
+
+  <!-- Landing page -->
+
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
+      <!-- Logo -->
+      <div class="text-white text-lg font-bold">LOGO</div>
+
+      <!-- Nav links -->
+      <div class="space-x-4">
+        <a href="#" class="text-white">Link 1</a>
+        <a href="#" class="text-white">Link 2</a>
+      </div>
+    </nav>
+
+    <!-- Padding to avoid content overlapping the fixed navbar -->
+    <div class="h-16"></div>
+
+    <!-- Main content -->
+    <main>
+      <!-- Toggle Button (under navbar) -->
+      <div class="flex justify-center my-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Toggle</button>
+      </div>
+
+      <!-- Body Content: 2x2 matrix -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-lg mx-auto p-4">
+        <!-- Quadrant 1 -->
+        <div class="bg-white p-6 shadow rounded">
+          <div class="circle-container flex justify-between">
+            <!-- 6 Responsive Circles in a row -->
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-blue-300 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 2 -->
+        <div class="bg-white p-6 shadow rounded">
+          <div class="circle-container flex justify-between">
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-green-300 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 3 -->
+        <div class="bg-white p-6 shadow rounded">
+          <div class="circle-container flex justify-between">
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-red-300 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 4 -->
+        <div class="bg-white p-6 shadow rounded">
+          <div class="circle-container flex justify-between">
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+            <div class="w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 bg-yellow-300 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4">
+      <div class="text-center">&copy; 2024 Colour palette a part of Code tinkering by JaqiKal</div>
+    </footer>
+  </body>
+</html>
