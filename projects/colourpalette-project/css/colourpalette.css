@@ -24,6 +24,81 @@ main {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
+/* Custom switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  /* Make the slider rounded */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  /* Round the toggle button */
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+  /* Change slider color when checked */
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+  /* Slide to the right when checked */
+}
+
+/* Rounded slider */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* keep the label accessible for screen readers but hidden visually */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #000;

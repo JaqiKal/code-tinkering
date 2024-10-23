@@ -23,7 +23,10 @@ const elementsToToggle = [body, mainContent, footer];
  * Toggles the dark mode class on all relevant elements.
  */
 function toggleDarkMode() {
-  elementsToToggle.forEach(element => element.classList.toggle("dark-mode"));
+  elementsToToggle.forEach(element => {
+    element.classList.toggle("dark"); // Tailwind's dark mode class
+    element.classList.toggle("dark-mode"); // Custom CSS dark mode class
+  });
 }
 
 // Add click event listener to the toggle button

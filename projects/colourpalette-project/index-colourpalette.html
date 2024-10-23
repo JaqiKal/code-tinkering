@@ -36,8 +36,15 @@
     <div class="h-16"></div>
 
     <!-- Toggle Button for Dark Mode (under navbar) -->
-    <div class="flex justify-center my-4">
-      <button id="theme-toggle" class="bg-blue-500 text-white px-4 py-2 rounded">Toggle Dark/Light Mode</button>
+    <div class="flex flex-col items-center my-4">
+      <!-- Toggle Switch -->
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider round"></span>
+      </label>
+
+      <!-- Slogan beneath the slider with emoticon -->
+      <p class="mt-2 text-gray-700 dark:text-gray-300">Dark or Bright - Your Choice! 😊</p>
     </div>
 
     <!-- Main content -->
