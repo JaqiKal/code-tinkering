@@ -1,0 +1,92 @@
+/* Global Reset and Layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f4f6;
+  /* Light background */
+  color: #1f2937;
+  /* Light text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #000;
+  /* Dark background */
+  color: #e2e8f0;
+  /* Dark text */
+}
+
+main.dark-mode {
+  background-color: #2d3748;
+  /* Dark mode main background */
+}
+
+footer.dark-mode {
+  background-color: #2d3748;
+  /* Dark mode footer background */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/* Quadrant and Circle Styles */
+.quadrant {
+  padding: 24px;
+  background-color: transparent;
+  /* Transparent background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .quadrant {
+  background-color: transparent;
+  /* Transparent in dark mode */
+}
+
+.circle-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Responsive Circle Layout */
+@media (max-width: 330px) {
+  .circle-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
