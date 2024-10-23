@@ -153,6 +153,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-size: x-small;
+
 }
 
 
@@ -178,8 +179,12 @@ footer {
   }
 
   .logo-img {
-    width: 70px;
+    width: 50px;
     margin-right: 50px
+  }
+
+  footer {
+    position: fixed;
   }
 
 }
