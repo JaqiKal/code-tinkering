@@ -181,7 +181,7 @@ body {
   align-items: center;
   /* Vertically centers the content */
   text-align: center;
-  color: var(--primary-dark-fuschia);
+  color: var(--secondary-dark-magenta);
   position: relative;
   flex-direction: column;
   /* Ensure the flex container stacks vertically */
@@ -243,7 +243,7 @@ body {
 }
 
 .parallax.relax {
-  background-image: url("/projects/parallax-project/images/pale-ocean.webp");
+  background-image: url("../images/pale-ocean.webp");
   color: var(--secondary-dark-magenta)
 }
 
