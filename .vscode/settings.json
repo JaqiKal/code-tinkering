@@ -24,6 +24,7 @@ This file defines your personal VS Code editor settings, such as file exclusions
   // Enables ESLint, a tool to analyze and fix issues in JavaScript/TypeScript code.
   "eslint.enable": true,
   "cSpell.words": [
+    "adipiscing",
     "arctictern",
     "Benyamin",
     "Bohlouli",
@@ -39,6 +40,7 @@ This file defines your personal VS Code editor settings, such as file exclusions
     "PGHOSTADDR",
     "rudge",
     "runserver",
+    "tailwindcss",
     "toolsai",
     "venv",
     "virtualenv",
