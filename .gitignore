@@ -27,11 +27,16 @@ __pycache__/
 # C extensions
 *.so
 
+
+# Ignore the entire dist folder
+dist/
+# But do not ignore output.css
+!dist/output.css
+
 # Distribution / packaging
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
