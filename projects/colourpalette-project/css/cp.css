@@ -1,0 +1,390 @@
+/* Global Reset and Layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f4f6;
+  /* Light background */
+  color: #1f2937;
+  /* Light text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  /* Make the slider rounded */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  /* Round the toggle button */
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+  /* Change slider color when checked */
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+  /* Slide to the right when checked */
+}
+
+/* Rounded slider */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* keep the label accessible for screen readers but hidden visually */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #000;
+  /* Dark background */
+  color: #e2e8f0;
+  /* Dark text */
+}
+
+main.dark-mode {
+  background-color: #2d3748;
+  /* Dark mode main background */
+}
+
+footer.dark-mode {
+  background-color: #2d3748;
+  /* Dark mode footer background */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+/* Dark Theme Colors */
+.dark-primary {
+  background-color: #17A2B8;
+}
+
+.dark-secondary {
+  background-color: #E67E22;
+}
+
+.dark-accent {
+  background-color: #28A745;
+}
+
+.dark-background {
+  background-color: #1A1A1A;
+}
+
+.dark-text {
+  background-color: #E5E5E5;
+}
+
+.dark-neutral {
+  background-color: #34495E;
+}
+
+.dark-primary-light1 {
+  background-color: #5BC0DE;
+}
+
+.dark-secondary-light1 {
+  background-color: #E59866;
+}
+
+.dark-accent-light1 {
+  background-color: #71D087;
+}
+
+.dark-background-light1 {
+  background-color: #444444;
+}
+
+.dark-text-light1 {
+  background-color: #F0F0F0;
+}
+
+.dark-neutral-light1 {
+  background-color: #5D6D7E;
+}
+
+.dark-primary-light2 {
+  background-color: #9BD9E8;
+}
+
+.dark-secondary-light2 {
+  background-color: #F2C298;
+}
+
+.dark-accent-light2 {
+  background-color: #A9E5B8;
+}
+
+.dark-background-light2 {
+  background-color: #666666;
+}
+
+.dark-text-light2 {
+  background-color: #F5F5F5;
+}
+
+.dark-neutral-light2 {
+  background-color: #85929E;
+}
+
+.dark-primary-light3 {
+  background-color: #B0E3F0;
+}
+
+.dark-secondary-light3 {
+  background-color: #F5D7B0;
+}
+
+.dark-accent-light3 {
+  background-color: #C1EED6;
+}
+
+.dark-background-light3 {
+  background-color: #888888;
+}
+
+.dark-text-light3 {
+  background-color: #FAFAFA;
+}
+
+.dark-neutral-light3 {
+  background-color: #AAB7C4;
+}
+
+.dark-primary-light4 {
+  background-color: #CCEFFF;
+}
+
+.dark-secondary-light4 {
+  background-color: #F9E3C2;
+}
+
+.dark-accent-light4 {
+  background-color: #E3F7ED;
+}
+
+.dark-background-light4 {
+  background-color: #AAAAAA;
+}
+
+.dark-text-light4 {
+  background-color: #FFFFFF;
+}
+
+.dark-neutral-light4 {
+  background-color: #D0D9E4;
+}
+
+/* Light Theme Colors */
+.light-primary {
+  background-color: #0A66C2;
+}
+
+.light-secondary {
+  background-color: #F1C40F;
+}
+
+.light-accent {
+  background-color: #E74C3C;
+}
+
+.light-background {
+  background-color: #FAFAFA;
+}
+
+.light-text {
+  background-color: #2C3E50;
+}
+
+.light-neutral {
+  background-color: #BDC3C7;
+}
+
+.light-primary-light1 {
+  background-color: #4A90E2;
+}
+
+.light-secondary-light1 {
+  background-color: #F4D03F;
+}
+
+.light-accent-light1 {
+  background-color: #EC7063;
+}
+
+.light-background-light1 {
+  background-color: #FFFFFF;
+}
+
+.light-text-light1 {
+  background-color: #34495E;
+}
+
+.light-neutral-light1 {
+  background-color: #D5DBDB;
+}
+
+.light-primary-light2 {
+  background-color: #7FB3E6;
+}
+
+.light-secondary-light2 {
+  background-color: #F7DC6F;
+}
+
+.light-accent-light2 {
+  background-color: #F1948A;
+}
+
+.light-background-light2 {
+  background-color: #FFFFFF;
+}
+
+.light-text-light2 {
+  background-color: #566573;
+}
+
+.light-neutral-light2 {
+  background-color: #EAEDED;
+}
+
+.light-primary-light3 {
+  background-color: #A4CDED;
+}
+
+.light-secondary-light3 {
+  background-color: #F9E79F;
+}
+
+.light-accent-light3 {
+  background-color: #F5B7B1;
+}
+
+.light-background-light3 {
+  background-color: #FFFFFF;
+}
+
+.light-text-light3 {
+  background-color: #808B96;
+}
+
+.light-neutral-light3 {
+  background-color: #F4F6F6;
+}
+
+.light-primary-light4 {
+  background-color: #C9E4F6;
+}
+
+.light-secondary-light4 {
+  background-color: #FBF5D4;
+}
+
+.light-accent-light4 {
+  background-color: #FADBD8;
+}
+
+.light-background-light4 {
+  background-color: #FFFFFF;
+}
+
+.light-text-light4 {
+  background-color: #B3B6B7;
+}
+
+.light-neutral-light4 {
+  background-color: #F8F9F9;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+
+  /* Stack columns vertically on smaller screens */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Adjust heading size and padding for smaller screens */
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .p-6 {
+    padding: 1rem;
+  }
+}
