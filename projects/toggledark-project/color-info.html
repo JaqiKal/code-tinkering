@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Color Palettes</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .theme {
+        margin-bottom: 40px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .theme:hover {
+        transform: translateY(-5px);
+      }
+      .color-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+      .color-preview {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+        border: 2px solid #ddd;
+      }
+      .usage {
+        font-style: italic;
+        color: #777;
+      }
+      @media (min-width: 600px) {
+        .color-block {
+          margin-bottom: 20px;
+        }
+        .color-preview {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      /* Flair for headers */
+      h2 {
+        border-bottom: 3px solid #0a66c2;
+        padding-bottom: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Accessible Color Palettes</h1>
+
+    <div class="theme">
+      <h2>Role of Each Color</h2>
+      <p><strong>Primary:</strong> Use these for the most important actions or information. They are bold and eye-catching, driving user focus.</p>
+      <p><strong>Secondary:</strong> Use these for secondary actions or supporting information. They complement the primary color but have a less dominant visual impact.</p>
+      <p><strong>Accents:</strong> These colors are for alerts, notifications, or elements you want to stand out. They create contrast without overwhelming the design.</p>
+    </div>
+
+    <div class="theme">
+      <h2>Design Tips</h2>
+      <p>For light themes, lighter backgrounds (like gray-100) with darker text (like gray-800) provide excellent readability.</p>
+      <p>For dark themes, avoid using pure black or white to reduce eye strain; softer shades like gray-900 and gray-200 offer a more comfortable viewing experience.</p>
+    </div>
+
+    <div class="theme light-theme">
+      <h2>Light Theme Palette</h2>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #0a66c2"></div>
+        <div>
+          <strong>Primary Color (Deep Blue)</strong><br />
+          Hex: #0A66C2 <br />
+          Tailwind CSS: <code>blue-700</code><br />
+          <span class="usage">Usage: Ideal for headers, primary buttons, and important action elements.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #f1c40f"></div>
+        <div>
+          <strong>Secondary Color (Muted Yellow)</strong><br />
+          Hex: #F1C40F <br />
+          Tailwind CSS: <code>yellow-500</code><br />
+          <span class="usage">Usage: Suitable for secondary actions, subtle highlights, and warnings.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #e74c3c"></div>
+        <div>
+          <strong>Accent Color (Soft Red)</strong><br />
+          Hex: #E74C3C <br />
+          Tailwind CSS: <code>red-500</code><br />
+          <span class="usage">Usage: Use for alerts, call-to-action buttons, and important visual cues.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #fafafa"></div>
+        <div>
+          <strong>Background (Soft White)</strong><br />
+          Hex: #FAFAFA <br />
+          Tailwind CSS: <code>gray-100</code><br />
+          <span class="usage">Usage: Main background color for content readability.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #2c3e50"></div>
+        <div>
+          <strong>Text Color (Dark Gray)</strong><br />
+          Hex: #2C3E50 <br />
+          Tailwind CSS: <code>gray-800</code><br />
+          <span class="usage">Usage: For body text and secondary content.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #bdc3c7"></div>
+        <div>
+          <strong>Neutral (Light Gray)</strong><br />
+          Hex: #BDC3C7 <br />
+          Tailwind CSS: <code>gray-300</code><br />
+          <span class="usage">Usage: For borders, subtle dividers, and inactive elements.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="theme dark-theme">
+      <h2>Dark Theme Palette</h2>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #17a2b8"></div>
+        <div>
+          <strong>Primary Color (Saturated Cyan)</strong><br />
+          Hex: #17A2B8 <br />
+          Tailwind CSS: <code>cyan-500</code><br />
+          <span class="usage">Usage: Main color for buttons, links, or active elements in dark mode.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #e67e22"></div>
+        <div>
+          <strong>Secondary Color (Muted Orange)</strong><br />
+          Hex: #E67E22 <br />
+          Tailwind CSS: <code>orange-600</code><br />
+          <span class="usage">Usage: Secondary buttons, notices, and actionable highlights.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #28a745"></div>
+        <div>
+          <strong>Accent Color (Bright Green)</strong><br />
+          Hex: #28A745 <br />
+          Tailwind CSS: <code>green-600</code><br />
+          <span class="usage">Usage: Accentuate success messages, active states, or hover effects.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #1a1a1a"></div>
+        <div>
+          <strong>Background (Dark Gray)</strong><br />
+          Hex: #1A1A1A <br />
+          Tailwind CSS: <code>gray-900</code><br />
+          <span class="usage">Usage: Background for the content to reduce strain and provide readability contrast.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #e5e5e5"></div>
+        <div>
+          <strong>Text Color (Light Gray)</strong><br />
+          Hex: #E5E5E5 <br />
+          Tailwind CSS: <code>gray-200</code><br />
+          <span class="usage">Usage: Main text color for dark backgrounds to ensure strong contrast.</span>
+        </div>
+      </div>
+
+      <div class="color-block">
+        <div class="color-preview" style="background-color: #34495e"></div>
+        <div>
+          <strong>Neutral (Dark Blue Gray)</strong><br />
+          Hex: #34495E <br />
+          Tailwind CSS: <code>blue-gray-700</code><br />
+          <span class="usage">Usage: For borders, secondary content, or inactive buttons in dark mode.</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
