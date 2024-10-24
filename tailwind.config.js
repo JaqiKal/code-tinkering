@@ -1,15 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // or 'media'
+  darkMode: 'class', // or 'media' for automatic dark mode detection
   content: [
-    "./src/**/*.{html,js}",  // Keep this to watch files inside the 'src' folder
-    "./*.html",              // To watch any HTML files in the root directory
-    "./projects/**/*.html",  // To watch HTML files in the 'projects' folder and subfolders
+    "./src/**/*.{html,js}",   // Watch for Tailwind classes in the 'src' folder
+    "./*.html",               // Watch HTML files in the root directory (e.g. index.html, about.html, contact.html)
+    "./projects/**/*.html",   // Watch all HTML files in 'projects' folder and subfolders
+    "./assets/js/**/*.js",    // Watch JavaScript files (for class usage in scripts)
   ],
   theme: {
-    extend: {},
+    extend: {},  // Add custom Tailwind CSS extensions here later if needed
   },
   plugins: [],
 };
-
 

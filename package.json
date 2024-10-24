@@ -1,4 +1,14 @@
 {
+  "name": "code-tinkering",
+  "version": "1.0.0",
+  "description": "This  is my personal playground for experimenting with various coding techniques, concepts, and ideas. This repository serves as a space to test new technologies, build small projects, and explore creative solutions without the pressure of perfection. From web animations and algorithms to exploring libraries and frameworks, this is where I refine my skills and try out new things in a hands-on way.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.14"
   }
