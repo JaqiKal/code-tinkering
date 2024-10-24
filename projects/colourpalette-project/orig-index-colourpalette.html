@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Colour Palette</title>
+    <!-- Tailwind CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../colourpalette-project/css/colourpalette.css" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/projects/colourpalette-project/images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/projects/colourpalette-project/images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/projects/colourpalette-project/images/favicon/favicon-16x16.png" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4 flex justify-between items-center fixed top-0 left-0 right-0 z-10">
+      <!-- Logo -->
+      <a href="/index.html" class="flex items-center">
+        <img src="/assets/images/logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+      </a>
+
+      <!-- Nav links -->
+      <div class="space-x-4">
+        <a href="/index.html" class="text-white">Main</a>
+        <a href="/projects-hub.html" class="text-white">Projects</a>
+      </div>
+    </nav>
+
+    <!-- Padding to avoid content overlapping the fixed navbar -->
+    <div class="h-16"></div>
+
+    <!-- Toggle Button for Dark Mode (under navbar) -->
+    <div class="flex flex-col items-center my-4">
+      <!-- Toggle Switch -->
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider round"></span>
+      </label>
+
+      <!-- Slogan beneath the slider with emoticon -->
+      <p class="mt-2 text-gray-700 dark:text-gray-300">Dark or Bright - Your Choice! 😊</p>
+    </div>
+
+    <!-- Main content -->
+    <main id="main-content">
+      <!-- Body Content: 2x2 grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-lg mx-auto p-4">
+        <!-- Quadrant 1 -->
+        <div class="quadrant shadow rounded">
+          <div class="circle-container">
+            <div class="circle bg-blue-300"></div>
+            <div class="circle bg-blue-300"></div>
+            <div class="circle bg-blue-300"></div>
+            <div class="circle bg-blue-300"></div>
+            <div class="circle bg-blue-300"></div>
+            <div class="circle bg-blue-300"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 2 -->
+        <div class="quadrant shadow rounded">
+          <div class="circle-container">
+            <div class="circle bg-green-300"></div>
+            <div class="circle bg-green-300"></div>
+            <div class="circle bg-green-300"></div>
+            <div class="circle bg-green-300"></div>
+            <div class="circle bg-green-300"></div>
+            <div class="circle bg-green-300"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 3 -->
+        <div class="quadrant shadow rounded">
+          <div class="circle-container">
+            <div class="circle bg-red-300"></div>
+            <div class="circle bg-red-300"></div>
+            <div class="circle bg-red-300"></div>
+            <div class="circle bg-red-300"></div>
+            <div class="circle bg-red-300"></div>
+            <div class="circle bg-red-300"></div>
+          </div>
+        </div>
+
+        <!-- Quadrant 4 -->
+        <div class="quadrant shadow rounded">
+          <div class="circle-container">
+            <div class="circle bg-yellow-300"></div>
+            <div class="circle bg-yellow-300"></div>
+            <div class="circle bg-yellow-300"></div>
+            <div class="circle bg-yellow-300"></div>
+            <div class="circle bg-yellow-300"></div>
+            <div class="circle bg-yellow-300"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white p-4">
+      <div class="text-center">&copy; 2024 Colour palette a part of Code tinkering by JaqiKal</div>
+    </footer>
+
+    <!-- JavaScript for Theme Toggle -->
+    <script src="../colourpalette-project/js/toggleDarkBrighTheme.js"></script>
+  </body>
+</html>
