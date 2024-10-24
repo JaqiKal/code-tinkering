@@ -35,6 +35,7 @@ This file defines your personal VS Code editor settings, such as file exclusions
     "formulahendry",
     "hookyqr",
     "keymap",
+    "listitem",
     "PGHOSTADDR",
     "rudge",
     "runserver",

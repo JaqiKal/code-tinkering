@@ -119,7 +119,8 @@ footer.dark-mode {
 
 /* Footer Styles */
 footer {
-  background-color: #1f2937;
+  background-color: #18181b;
+  font-size: smaller;
   color: white;
   padding: 16px;
   text-align: center;
